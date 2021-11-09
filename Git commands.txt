@@ -70,7 +70,7 @@ git push -d origin bugfix-> deletes the branch bugfix from remote repository
 
 
 Method to Ignore:
-Create a .gitignore ile as touch .gitignore
+Create a .gitignore file as touch .gitignore in git bash
 open the file and enter the name of the file which you want to ignore in the .gitignore file
 File Ignored!
 writing *file_type in .gitignore can gnore all files have the specific file format. Eg-> *.log(ignores all log files)
