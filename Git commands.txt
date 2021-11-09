@@ -1,0 +1,92 @@
+User setup(required once only):-
+
+git config --global user.name "name_of_person"
+git config --global user.email "email_of_person"
+git config --list -> check name and email
+git config user.name ->user's name 
+git config user.email ->user's email
+
+The Git Commands:-
+
+git status ->to check status
+git init ->to initialize a repositary
+git add --a ->adds all the files for staging
+git add . -> adds all the files for staging
+git commit -m "#comment" -> makes commit with the given message in #comment
+git log -> to see all your history
+git add file_name -> adds aaa particular file name to stage 
+rm -rf .git -> deletes the git repository
+git clone https://github.com/tensorflow/tensorflow.git -> cloning a git directory
+git clone https://github.com/tensorflow/tensorflow.git tensorFlow -> cloning a git directory with a name
+pwd ->present working directory
+ls -> dislay list contents
+cd folder_name/ -> changes directory inside the given folder
+touch file_name -> creates empty file, like touch error.log
+git diff -> compares working directory with staging area
+git diff --staged -> compares previous commit with present staging area
+git commit -a -m "Message" -> Directly commits a tracked file without staging but no effect on untracked file
+git rm file_name -> removes the file and goes to staging area
+git mv first.txt first_rename.txt -> rename file to given name and adds to staging area
+git rm --cached file_name -> untracks a file but doesn't delete it
+git log -p -> shows log along with their diff
+git log -p -number-> shows log along with their diff upto number commits
+git log --stat -> shows the logs in brief
+git log --pretty=oneline -> shows each commit briefed in every line
+git log --pretty=short -> shows each commit briefed in short
+git log --pretty=full ->shows each commit briefed more than short
+git log --since=2.days -> shows since past two days
+git log --since=2.weeks-> shows since past two weeks
+git log --since=2.months -> shows since past two months
+git log --since=2.years -> shows since past two years
+git log --pretty=format:"%h -- %ae" -> shows in the format of abbreviated hash and author email as formatters
+git log --pretty=format:"%h -- %an" -> shows in the format of abbreviated hash and author name as formatters
+to exit vim editor :Esc, then, : then w and q
+git commit --amend -> to ammend changes by using vim editor
+git restore --staged <file_name> ->to unstage a staged file
+git checkout -- <file_name> -> to unmodify the previously done changes and goes back to the previous commit(for a single file)
+git checkout -f -> to unmodify the previously done changes and goes back to the previous commit(for all the present files)
+git remote add origin https://github.com/GuraasisSingh/GitTutorialDemo.git ->pushing git to github website with name, origin as remote
+git remote -> to check our git remotes present
+git remote -v -> shows pushing and pulling(fetching) remotes
+git config --global alias.st status ->to use st instead of status(git st)
+git config --global alias.unstage 'restore --staged --' -> more than one word(git unstage)
+git config --global alias.last 'log -p -1'(git last)
+git checkout -b develop ->Creates new branch named 'develop' and goes to it.
+git checkout master -> to go back to master branch
+git branch -> to see names of branches
+git merge develop ->merge branch with master branch
+exit vim editor ->'Esc'': wq' 
+git branch -v -> branches along with their last commit
+git branch --merged -> shows already merged branches
+git branch --no-merged -> shows branches which are not merged
+git branch -d develop -> to delete branch and gives error if develop isn't merged
+git branch -D develop -> to delete branch and gives no error error if develop isn't merged
+git push -u origin master-> pushes master branch to remote repository
+git push origin bugfix   ->pushes the bugfix named branch to remote repository
+git push origin bugfix:mybugfix  -> pushes the bugfix named branch to remote repository with the name mybugfix
+git push origin master-> pushes master branch to remote repository in use
+git push -d origin bugfix-> deletes the branch bugfix from remote repository
+
+
+
+Method to Ignore:
+Create a .gitignore file as touch .gitignore in git bash
+open the file and enter the name of the file which you want to ignore in the .gitignore file
+File Ignored!
+writing *file_type in .gitignore can gnore all files have the specific file format. Eg-> *.log(ignores all log files)
+writing directory/ in .gitignore can gnore all files present in the directory wherever.
+writing /directory/ in .gitignore can gnore all files present in the directory only outside.
+
+Method to Create remote repository to from git to github:
+git remote add origin https://github.com/GuraasisSingh/GitTutorialDemo.git ->pushing git to github website with name, origin as remote
+git remote -> to check our git remotes present
+git remote -v ->shows pushing and pulling(fetching) remotes
+(some procedure below:)
+ssh-keygen -t ed25519 -C "guraasiss@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+tail ~/.ssh/id_ed25519.pub
+(Now put the generated ssh code in your github ssh code)
+git push -u origin master
+(Now you will be able to push your repository)
+(You can use the last command in future also to push the remote repository to github)
