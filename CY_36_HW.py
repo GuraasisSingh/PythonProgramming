@@ -1,5 +1,5 @@
 #Session 36 HW
-
+'''
 #A Design like Notepad Menu
 from tkinter import *
 root=Tk()
@@ -59,9 +59,9 @@ item5.add_command(label="About Notepad")
 
 root.config(menu=menu)
 root.mainloop()
-
-
 '''
+
+
 #Python IDLE
 from tkinter import *
 root=Tk()
@@ -156,4 +156,4 @@ l1=Entry(root,bg="white",fg="black",width=100)
 l1.grid(row=1,column=1)
 
 root.mainloop()
-'''
+
