@@ -1,5 +1,5 @@
 #Session 41
-#Make a Grade calculator as HW
+
 from tkinter import *
 root=Tk()
 root.title("CALCULATOR")
