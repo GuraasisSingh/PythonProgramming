@@ -8,18 +8,20 @@ root.config(bg="green3")
 
 def Calculate():
     m=int(marks.get())
-    if m>=90:
+    if m>=90 and m<=100:
         grade="A"        
-    elif m>=80:
+    elif m>=80 and m<=90 :
         grade="B"
-    elif m>=70:
+    elif m>=70 and m<=80:
         grade="C"
-    elif m>=60:
+    elif m>=60 and m<=70:
         grade="D"
-    elif m>=50:
+    elif m>=50 and m<=60:
         grade="E"
-    else:
+    elif m>=0 and m<=50:
         grade="F"
+    else:
+        grade="Invalid Grade"
     print=Label(text=f"Your Grade is {grade}",font="verdana 13 bold",bg="yellow",fg="blue")
     print.place(x=120,y=250)
 
