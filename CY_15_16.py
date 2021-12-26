@@ -130,6 +130,8 @@ print(a.keys())
 print(a.values())
 print(a.items())
 print(a[1])
+
+'''
 print(a.get("apple"))
 a['apple']='white'
 a['apple']='white'
@@ -164,7 +166,7 @@ print(m)
 d=dict(a)
 print(d)
 
-
+'''
 
 
 
