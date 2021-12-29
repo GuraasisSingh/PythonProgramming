@@ -73,9 +73,9 @@ Method to Ignore:
 Create a .gitignore file as touch .gitignore in git bash
 open the file and enter the name of the file which you want to ignore in the .gitignore file
 File Ignored!
-writing *file_type in .gitignore can gnore all files have the specific file format. Eg-> *.log(ignores all log files)
-writing directory/ in .gitignore can gnore all files present in the directory wherever.
-writing /directory/ in .gitignore can gnore all files present in the directory only outside.
+writing *file_type in .gitignore can ignore all files have the specific file format. Eg-> *.log(ignores all log files)
+writing directory/ in .gitignore can ignore all files present in the directory wherever.
+writing /directory/ in .gitignore can ignore all files present in the directory only outside.
 
 Method to Create remote repository to from git to github:
 git remote add origin https://github.com/GuraasisSingh/GitTutorialDemo.git ->pushing git to github website with name, origin as remote
