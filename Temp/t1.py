@@ -1,7 +1,5 @@
-#Session 26 project
 '''
 Authentication System Project : 
-
 The project can be done in the following ways:
 Recommended: The user can be asked to register into the system,
 and then using the credentials given while registering,
@@ -12,7 +10,6 @@ and can be asked to login to access the system. Hints: if-else block
 The user can be given predefined credentials and on first login,
 the user can change the password.Hints: if-else block, lists/tuples.
 Note:
-
 1) The system after login has to do some action/function. 
 2) In order to make the system foolproof just like an industry level system,
    a lot of validation techniques can be used like the number characters in the password, use of special characters etc.
@@ -21,7 +18,7 @@ print("Welcome to Python Authentication System")
 
 ask=int(input("Enter 1 to make new account and enter any other number to get predefined credentials for registration: \n"))
 def login():
-    print("A proper name should not contain a digit or special character")
+    print("A proper name should not contain a digit or character")
     name=input("Enter your name:\n")
     print("A proper ends with @yahoo.com or @gmail.com irrespective of the case of letters")
     email=input("Enter your email:\n").lower()
@@ -48,15 +45,15 @@ def check(n,e,c,p):
     c3=False
     c4=False
     for i in n:
-        if i in ['0','1','2','3','4','5','6','7','8','9','!','@','$','%','^','&','*','_','?']:
+        for i in ['0','1','2','3','4','5','6','7','8','9','!','@','$','%','^','&','*','_','?']:
             temp+=1            
-    if temp>0:
-        c1=False
-        print(n,"name is invalid")
-    elif e.endswith("@gmail.com") or e.endswith("@yahoo.com"):
-        c2=True
-    else:
-        print(e,"email is invalid")
+        if temp>0:
+            c1=False
+            print(n,"name is invalid")
+        elif e.endswith("@gmail.com") or e.endswith("@yahoo.com"):
+            c2=True
+        else:
+            print(e,"email is invalid")
     if len(str(c))==10:
         c3=True
     else:
@@ -100,18 +97,3 @@ if passChange=="yes":
     login()
 
 print("Thanks for using our platform to register")
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-    
