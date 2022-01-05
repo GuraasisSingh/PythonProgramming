@@ -21,7 +21,7 @@ def Calculate():
     elif m>=0 and m<=50:
         grade="F"
     else:
-        grade="Invalid Grade"
+        grade="Invalid"
     print=Label(text=f"Your Grade is {grade}",font="verdana 13 bold",bg="yellow",fg="blue")
     print.place(x=120,y=250)
 
