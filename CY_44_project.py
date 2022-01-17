@@ -62,8 +62,7 @@ else:
           
         
     
-#Do with Gui as well
-#Making a number guessing game
+
 
 
 #Remind to do Alarm Clock and Digital Clock
