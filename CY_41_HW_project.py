@@ -3,7 +3,7 @@
 from tkinter import *
 root=Tk()
 root.title("GRADE CALCULATOR")
-root.geometry("500x450")
+root.geometry("500x450")    
 root.config(bg="green3")
 
 def Calculate():

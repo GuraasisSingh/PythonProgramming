@@ -3,11 +3,10 @@ import random
 up=int(input("Enter the Upper Limit:\n"))
 lo=int(input("Enter the Lower Limit:\n"))
 n=random.randint(lo,up)
-chance=int((up-lo)/3)
+chance=int((up-lo)/4)
 if chance==0:
     chance=1
-elif chance>12:
-    chance=12
+
 while(True):
     print("You have",chance,"chances to guess the number.")
     g=int(input("Guess the number:\n"))
