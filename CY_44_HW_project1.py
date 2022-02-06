@@ -9,6 +9,7 @@ if chance==0:
 
 while(True):
     print("You have",chance,"chances to guess the number.")
+    
     g=int(input("Guess the number:\n"))
     chance-=1
     if g==n:
