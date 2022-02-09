@@ -1,4 +1,5 @@
 #Session 45 and 46
+#Digital clock
 from tkinter import *
 from tkinter.ttk import *
 from time import strftime
